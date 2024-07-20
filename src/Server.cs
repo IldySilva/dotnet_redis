@@ -8,4 +8,4 @@ Console.WriteLine("Logs from your program will appear here!");
  server.Start();
 Console.WriteLine(server.LocalEndpoint.Serialize());
 var clientSocket=server.AcceptSocket();
-await clientSocket.SendAsync(Encoding.UTF8.GetBytes("+PONG\\r\\n" ),SocketFlags.None);
+await clientSocket.SendAsync(Encoding.UTF8.GetBytes("+PONG\r\n" ),SocketFlags.None);
